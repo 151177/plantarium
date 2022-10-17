@@ -7,7 +7,7 @@ import RegisterForm from "./RegisterForm";
 import Navigation from "./Navigation";
 import Home from "./Home";
 import Footer from "./Footer/Footer";
-import About from "./Footer/About";
+
 import Contact from "./Footer/Contact";
 import Cart from "./Order/Cart";
 import OrderForm from "./Order/OrderForm";
@@ -188,7 +188,7 @@ const App = () => {
   };
 
   return (
-    <div className="app-container">
+    <div className='app-container'>
       <Navigation
         token={token}
         user={user}
@@ -198,32 +198,30 @@ const App = () => {
       />
       <Routes>
         <Route
-          path="/"
+          path='/'
           element={
             <>
               <Home />
             </>
           }
         />
-        <Route path="/login" element={<LoginForm setToken={setToken} />} />
+        <Route path='/login' element={<LoginForm setToken={setToken} />} />
         <Route
-          path="/register"
+          path='/register'
           element={<RegisterForm token={token} setToken={setToken} />}
         />
         <Route
-          path="/shopall"
+          path='/shopall'
           element={
             <ShopAll handleAddToCart={handleAddToCart} products={products} />
           }
         />
         <Route
-          path="/cart"
-          element={
-            <Cart cart={cart} setCart={setCart} token={token} />
-          }
+          path='/cart'
+          element={<Cart cart={cart} setCart={setCart} token={token} />}
         />
         <Route
-          path="/checkout"
+          path='/checkout'
           element={
             <OrderForm
               cart={cart}
@@ -234,11 +232,11 @@ const App = () => {
           }
         />
         <Route
-          path="/order/confirm/:orderId"
+          path='/order/confirm/:orderId'
           element={<Success cart={cart} setCart={setCart} />}
         />
         <Route
-          path="/categories/largeplants"
+          path='/categories/largeplants'
           element={
             <LargePlants
               handleAddToCart={handleAddToCart}
@@ -247,7 +245,7 @@ const App = () => {
           }
         />
         <Route
-          path="/categories/mediumplants"
+          path='/categories/mediumplants'
           element={
             <MediumPlants
               handleAddToCart={handleAddToCart}
@@ -256,7 +254,7 @@ const App = () => {
           }
         />
         <Route
-          path="/categories/smallplants"
+          path='/categories/smallplants'
           element={
             <SmallPlants
               handleAddToCart={handleAddToCart}
@@ -265,7 +263,7 @@ const App = () => {
           }
         />
         <Route
-          path="/products/:id"
+          path='/products/:id'
           element={
             <ProductPage
               handleAddToCart={handleAddToCart}
@@ -276,9 +274,9 @@ const App = () => {
             />
           }
         />
-        <Route path="/admin" element={<AdminDash token={token} />} />
+        <Route path='/admin' element={<AdminDash token={token} />} />
         <Route
-          path="/admin/products"
+          path='/admin/products'
           element={
             <Products
               token={token}
@@ -288,7 +286,7 @@ const App = () => {
           }
         />
         <Route
-          path="/admin/addproduct"
+          path='/admin/addproduct'
           element={
             <AddProduct
               token={token}
@@ -298,7 +296,7 @@ const App = () => {
           }
         />
         <Route
-          path="/admin/products/:id"
+          path='/admin/products/:id'
           element={
             <EditProduct
               token={token}
@@ -307,46 +305,46 @@ const App = () => {
             />
           }
         />
-        <Route path="/admin/orders" element={<Orders />} />
-        <Route path="/admin/orders/:id" element={<EditOrder token={token} />} />
-        <Route path="/admin/accounts" element={<Users />} />
+        <Route path='/admin/orders' element={<Orders />} />
+        <Route path='/admin/orders/:id' element={<EditOrder token={token} />} />
+        <Route path='/admin/accounts' element={<Users />} />
         <Route
-          path="/admin/accounts/:id"
+          path='/admin/accounts/:id'
           element={<EditUser token={token} />}
         />
         <Route
-          path="/admin/reviews"
+          path='/admin/reviews'
           element={<Reviews token={token} user={user} />}
         />
         <Route
-          path="/myaccount"
+          path='/myaccount'
           element={<MyAccount token={token} user={user} />}
         />
         <Route
-          path="/myaccount/edit"
+          path='/myaccount/edit'
           element={
             <EditMyAccount token={token} user={user} setUser={setUser} />
           }
         />
         <Route
-          path="/myaccount/order/:id"
+          path='/myaccount/order/:id'
           element={<SingleOrder token={token} user={user} />}
         />
         <Route
-          path="/myaccount/review/:id"
+          path='/myaccount/review/:id'
           element={<SingleReview token={token} user={user} />}
         />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/shipping" element={<Shipping />} />
-        <Route path="/customer-service" element={<CustomerService />} />
-        <Route path="/*" element={<PageNotFound />} />
+
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/shipping' element={<Shipping />} />
+        <Route path='/customer-service' element={<CustomerService />} />
+        <Route path='/*' element={<PageNotFound />} />
       </Routes>
       <Footer />
 
       <ToastContainer
         style={{ width: "380px", fontSize: "18px", textAlign: "center" }}
-        position="bottom-center"
+        position='bottom-center'
         autoClose={1700}
         hideProgressBar={false}
         newestOnTop={false}
@@ -355,7 +353,7 @@ const App = () => {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        toastClassName="dark-toast"
+        toastClassName='dark-toast'
       />
     </div>
   );
