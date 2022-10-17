@@ -12,9 +12,6 @@ const Footer = () => {
             <Link to='/' style={{ textDecoration: "none" }}>
               <div className='footer-link'>Plantarrium</div>
             </Link>
-            <Link to='/about' style={{ textDecoration: "none" }}>
-              <div className='footer-link'>About</div>
-            </Link>
             <Link to='/contact' style={{ textDecoration: "none" }}>
               <div className='footer-link'>Contact</div>
             </Link>
@@ -25,13 +22,22 @@ const Footer = () => {
             <Link to='/shopall' style={{ textDecoration: "none" }}>
               <div className='footer-link'>Shop All Plants</div>
             </Link>
-            <Link to='/categories/largeplants' style={{ textDecoration: "none" }}>
+            <Link
+              to='/categories/largeplants'
+              style={{ textDecoration: "none" }}
+            >
               <div className='footer-link'>Large Plants</div>
             </Link>
-            <Link to='/categories/mediumplants' style={{ textDecoration: "none" }}>
+            <Link
+              to='/categories/mediumplants'
+              style={{ textDecoration: "none" }}
+            >
               <div className='footer-link'>Medium Plants</div>
             </Link>
-            <Link to='/categories/smallplants' style={{ textDecoration: "none" }}>
+            <Link
+              to='/categories/smallplants'
+              style={{ textDecoration: "none" }}
+            >
               <div className='footer-link'>Small Plants</div>
             </Link>
           </div>
