@@ -11,7 +11,7 @@ const Contact = () => {
           <div className='contact-subhead'>
             Our team of engineers may like plants, but they love to
             problem-solve. Looking to build amazing user interfaces with a
-            collaborative with accountable team? Just send us an email and we'll
+            collaborative and accountable team? Just send us an email and we'll
             be in touch.
           </div>
           {/* comment */}
