@@ -14,6 +14,7 @@ const Contact = () => {
             collaborative with accountable team? Just send us an email and we'll
             be in touch.
           </div>
+          {/* comment */}
           <a
             href='mailto:plantarriumprogramming@gmail.com'
             style={{ textDecoration: "none" }}
